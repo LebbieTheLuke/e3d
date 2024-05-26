@@ -4,24 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enumclaw 3D Printing</title>
+    <title>Enumclaw 3D Printing - Home</title>
     <style>
         /* Add your CSS styles here */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f0f0; /* Light grey background */
         }
 
         header {
-            background-color: #333;
+            background-color: #343a40;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
 
         nav {
-            background-color: #444;
+            background-color: #495057;
             padding: 10px;
             text-align: center;
         }
@@ -33,41 +34,46 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .section {
+            margin-bottom: 30px;
+            text-align: center;
         }
 
-        .product img {
-            width: 200px;
-            margin: 10px;
+        h2 {
+            color: #343a40;
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
         }
 
-        form {
+        p {
+            color: #555;
+        }
+
+        .home-container {
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 50px 20px;
+            background-color: #f0f0f0; /* Light grey background */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Adjust the width of the image */
             max-width: 600px;
-            margin: 0 auto;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-
-        input[type="submit"] {
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -77,52 +83,33 @@
         <h1>Enumclaw 3D Printing</h1>
     </header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <div id="home" class="container">
-        <h2>Welcome to Enumclaw 3D Printing</h2>
-        <p>We specialize in creating and selling high-quality 3D printed objects. Explore our website to see our products
-            or contact us for custom orders.</p>
-    </div>
-    <div id="products" class="container">
-        <h2>Our Products</h2>
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <img src="product2.jpg" alt="Product 2">
-            <img src="product3.jpg" alt="Product 3">
-            <!-- Add more product images as needed -->
+    <div class="container home-container">
+        <img src="https://www.autodesk.com/products/fusion-360/blog/wp-content/uploads/2021/11/shutterstock_676361872.jpg" alt="3D Printing">
+        <div class="section">
+            <h2>Welcome to Enumclaw 3D Printing</h2>
+            <p>We specialize in creating and selling high-quality 3D printed objects. Explore our website to see our products or contact us for custom orders.</p>
+        </div>
+        
+        <div class="section">
+            <h2>How Does It Work?</h2>
+            <p>A 3D printer is a machine that creates three-dimensional objects from a digital model. It works by adding layers of material one at a time until the object is complete. With a 3D printer, you can create a wide range of objects, from prototypes and custom parts to artistic sculptures and functional tools.</p>
+        </div>
+        
+        <div class="section">
+            <h2>What Can It Print?</h2>
+            <p>3D printers can print objects using various materials, but one common material is plastic. Plastic filament is melted and extruded layer by layer to build up the final object. This allows for the creation of durable and versatile items.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Efficiency and Reliability</h2>
+            <p>Our 3D printing system is highly efficient, ensuring that your prints are completed promptly and reliably. With our streamlined process, your custom print will be ready within a week, providing you with sturdy and reliable results.</p>
         </div>
     </div>
-    <div id="about" class="container">
-        <h2>About Us</h2>
-        <p>We are a locally owned and operated 3D printing company located in Enumclaw, WA. Our mission is to provide
-            innovative and affordable 3D printed products to our community.</p>
-    </div>
-    <div id="contact" class="container">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required><br>
-            <input type="email" id="email" placeholder="Your Email" required><br>
-            <textarea id="message" rows="4" placeholder="Your Message" required></textarea><br>
-            <input type="submit" value="Send Message">
-        </form>
-    </div>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-            var subject = "Inquiry from " + name;
-            var body = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
-            var mailtoLink = 'mailto:your@email.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-            window.location.href = mailtoLink;
-        });
-    </script>
 </body>
 
 </html>
