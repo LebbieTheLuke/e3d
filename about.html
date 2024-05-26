@@ -39,52 +39,18 @@
             padding: 0 20px;
         }
 
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+        .about-text {
+            text-align: justify;
+            margin-bottom: 40px;
         }
 
-        .product img {
-            width: 200px;
-            margin: 10px;
-        }
-
-        form {
-            max-width: 600px;
+        .about-img {
+            max-width: 40%;
+            height: auto;
+            display: block;
             margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        input[type="submit"] {
-            background-color: #343a40;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #23272b;
         }
     </style>
 </head>
@@ -101,8 +67,12 @@
     </nav>
     <div id="about" class="container">
         <h2>About Us</h2>
-        <p>We are a locally owned and operated 3D printing company located in Enumclaw, WA. Our mission is to provide
-            innovative and affordable 3D printed products to our community.</p>
+        <div class="about-text">
+            <p>We are a 3D printing company based in Enumclaw, WA. Our mission is to provide high-quality 3D printed products to our customers.</p>
+            <p>We use the Ender 3 V3 SE, a high-end 3D printer known for its reliability and affordability. Our team is led by Luke, a passionate entrepreneur with years of experience in the 3D printing industry.</p>
+            <!-- Add more about us information as needed -->
+        </div>
+        <img src="https://m.media-amazon.com/images/I/5132XsJHZzL.jpg" alt="Ender 3 V3 SE" class="about-img">
     </div>
 </body>
 
