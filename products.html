@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enumclaw 3D Printing - Products</title>
+    <title>Rocktopus - Products</title>
     <style>
         /* Add your CSS styles here */
         body {
@@ -34,64 +34,41 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 800px;
             margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        .product {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
-
-        .product img {
-            width: 200px;
-            margin: 10px;
-        }
-
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
             padding: 20px;
+            background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        input[type="text"],
-        input[type="email"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
+        img {
+            max-width: 20%; /* Changed max-width to 50% */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
             border-radius: 5px;
-            box-sizing: border-box;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        textarea {
-            resize: vertical;
-        }
-
-        input[type="submit"] {
-            background-color: #343a40;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
+        .email-template {
+            background-color: white;
+            padding: 20px;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
-        input[type="submit"]:hover {
-            background-color: #23272b;
+        .email-instructions {
+            color: #555;
+            margin-top: 10px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Enumclaw 3D Printing</h1>
+        <h1>Rocktopus</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -99,15 +76,23 @@
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div id="products" class="container">
-        <h2>Our Products</h2>
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <img src="product2.jpg" alt="Product 2">
-            <img src="product3.jpg" alt="Product 3">
-            <!-- Add more product images as needed -->
+    <div class="container">
+        <a href="mailto:shortvid200@gmail.com?subject=Product Inquiry&amp;body=Hello my name is {insert your name} and I would like to buy a 3D printed Rocktopus.%0D%0A%0D%0AI am interested in the product and would like to inquire further about it.%0D%0A%0D%0A[Please insert your message here, give desired color and any quuestions]%0D%0A%0D%0AThank you.%0D%0A%0D%0A%0D%0A">
+            <img src="https://m.media-amazon.com/images/I/816N2JA5xqL._UF894,1000_QL80_.jpg" alt="Product Image">
+            <h2 style="text-align: center;">Rocktopus</h2>
+        </a>
+        <div class="email-template">
+        
+        <p>We will add more in the future.</p>
+            <h2>Email Template</h2>
+            <p>Please click on any image above to open your email client and send us a message regarding this product.</p>
+            <div class="email-instructions">
+                <p><strong>Instructions:</strong></p>
+                <p>1. Click on the image above.</p>
+                <p>2. An email draft will open with the recipient set to shortvid200@gmail.com.</p>
+                <p>3. Customize the email body as needed. You can change the color and content of this section.</p>
+                <p>4. Send the email when you're ready.</p>
+            </div>
         </div>
     </div>
 </body>
-
-</html>
